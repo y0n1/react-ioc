@@ -1,0 +1,29 @@
+{
+  "name": "@y0n1/react-ioc",
+  "version": "0.1.0",
+  "description": "Minimal Inversion of Control (IoC) for React",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/y0n1/react-ioc"
+  },
+  "author": "y0n1 <y0n1@outlook.com>",
+  "exports": "./mod.ts",
+  "compilerOptions": {
+    "types": [
+      "@types/react",
+      "react"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "deno.ns"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "imports": {
+    "@types/react": "npm:@types/react@^18.3.0",
+    "react": "npm:react@^18.3.0"
+  }
+}
