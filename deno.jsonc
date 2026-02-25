@@ -9,6 +9,9 @@
   },
   "author": "y0n1 <y0n1@outlook.com>",
   "exports": "./mod.ts",
+  "tasks": {
+    "check:publish": "deno publish --dry-run --allow-dirty"
+  },
   "compilerOptions": {
     "types": [
       "@types/react",
