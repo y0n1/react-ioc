@@ -1,4 +1,4 @@
-name: Release Please
+name: Publish
 on:
   push:
     branches:
@@ -17,7 +17,8 @@ jobs:
         id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          config-file: .release-please-config.json
+          config-file: .github/release-please-config.json
+          manifest-file: .github/release-please-manifest.json
       - uses: actions/checkout@v6
         if: ${{ steps.release.outputs.release_created }}
       - name: Publish package
