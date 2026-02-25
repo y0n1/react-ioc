@@ -3,7 +3,7 @@ import type { Container } from "../core/Container.ts";
 import { Provider } from "./Provider.ts";
 
 /** React context holding the IoC {@link Container} (or null when outside a {@link Provider}). */
-export const Context: React.Context<Container | null> = createContext<Container | null>(null);
+export const Context = createContext<Container | null>(null);
 
 /**
  * Resolves a dependency from the nearest {@link Provider}'s container.
