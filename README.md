@@ -5,6 +5,18 @@ React provider so you can inject dependencies anywhere in the tree.
 
 ## Install
 
+**Node.js / npm**
+
+```bash
+npx jsr add @y0n1/react-ioc
+```
+
+Then import as usual:
+
+```ts
+import { Container, Provider, useInjection } from "@y0n1/react-ioc";
+```
+
 **Deno**
 
 ```ts
