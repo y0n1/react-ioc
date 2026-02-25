@@ -1,6 +1,6 @@
 {
   "name": "@y0n1/react-ioc",
-  "version": "0.1.0", // x-release-please-version
+  "version": "0.2.0", // x-release-please-version
   "description": "Minimal Inversion of Control (IoC) for React",
   "license": "MIT",
   "repository": {
