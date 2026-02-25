@@ -1,6 +1,6 @@
 {
   "name": "@y0n1/react-ioc",
-  "version": "0.1.0",
+  "version": "0.1.0", // x-release-please-version
   "description": "Minimal Inversion of Control (IoC) for React",
   "license": "MIT",
   "repository": {
@@ -18,9 +18,7 @@
       "dom",
       "dom.iterable",
       "deno.ns"
-    ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    ]
   },
   "imports": {
     "@types/react": "npm:@types/react@^18.3.0",
