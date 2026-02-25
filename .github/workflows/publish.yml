@@ -1,15 +1,26 @@
 name: Publish
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
 
 jobs:
-  publish:
+  release-please:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
     steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: .github/release-please-config.json
+          manifest-file: .github/release-please-manifest.json
       - uses: actions/checkout@v6
+        if: ${{ steps.release.outputs.release_created }}
       - name: Publish package
+        if: ${{ steps.release.outputs.release_created }}
         run: npx jsr publish
