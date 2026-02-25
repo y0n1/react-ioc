@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 import type { Container } from "../core/Container.ts";
-import { Provider } from "./Provider.tsx";
+import { Provider } from "./Provider.ts";
 
 /** React context holding the IoC {@link Container} (or null when outside a {@link Provider}). */
 export const Context: React.Context<Container | null> = createContext<Container | null>(null);
