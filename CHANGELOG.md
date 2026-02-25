@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/y0n1/react-ioc/compare/v0.2.0...v0.2.1) (2026-02-25)
+
+
+### Bug Fixes
+
+* specify ReactContext type for Context export ([#10](https://github.com/y0n1/react-ioc/issues/10)) ([a5097c4](https://github.com/y0n1/react-ioc/commit/a5097c420f578b02a7088b88c9b919fab8010f83))
+* update token reference in GitHub Actions workflow ([#12](https://github.com/y0n1/react-ioc/issues/12)) ([0dd2bad](https://github.com/y0n1/react-ioc/commit/0dd2badcd84c51be405a315022c4a6151900af31))
+
 ## [0.2.0](https://github.com/y0n1/react-ioc/compare/v0.1.0...v0.2.0) (2026-02-25)
 
 
