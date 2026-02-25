@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/y0n1/react-ioc/compare/v0.2.0...v0.2.1) (2026-02-25)
+
+
+### Bug Fixes
+
+* specify ReactContext type for Context export ([#10](https://github.com/y0n1/react-ioc/issues/10)) ([a5097c4](https://github.com/y0n1/react-ioc/commit/a5097c420f578b02a7088b88c9b919fab8010f83))
+
 ## [0.2.0](https://github.com/y0n1/react-ioc/compare/v0.1.0...v0.2.0) (2026-02-25)
 
 
