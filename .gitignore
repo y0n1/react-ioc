@@ -30,6 +30,7 @@ Thumbs.db
 *.swp
 *.swo
 *~
+.cursor/
 
 # Test coverage
 coverage/

@@ -1,7 +1,5 @@
-import type {
-  PropsWithChildren,
-  ReactNode,
-} from "react";
+import { createElement } from "react";
+import type { PropsWithChildren, ReactNode } from "react";
 import type { Container } from "../core/Container.ts";
 import { Context } from "./Context.ts";
 
@@ -16,11 +14,10 @@ import { Context } from "./Context.ts";
 export function Provider(
   props: PropsWithChildren<{ container: Container }>,
 ): ReactNode {
-  return (
-    <Context.Provider value={props.container}>
-      {props.children}
-    </Context.Provider>
+  return createElement(
+    Context.Provider,
+    { value: props.container },
+    props.children,
   );
 }
 Provider.displayName = "Provider";
-
