@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0](https://github.com/y0n1/react-ioc/compare/v0.2.1...v0.3.0) (2026-11-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* throw when get() has no binding ([#17](https://github.com/y0n1/react-ioc/issues/17))
+
+### Bug Fixes
+
+* throw when get() has no binding ([#17](https://github.com/y0n1/react-ioc/issues/17)) ([33abdec](https://github.com/y0n1/react-ioc/commit/33abdec9f2c14e983a0afa6164e5252f3056d1cc))
+
 ## [0.2.1](https://github.com/y0n1/react-ioc/compare/v0.2.0...v0.2.1) (2026-02-25)
 
 
