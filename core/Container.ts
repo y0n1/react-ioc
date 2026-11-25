@@ -14,11 +14,16 @@ export class Container {
      * Resolves a value by its registration symbol.
      * @param registeredInterfaceSymbol - The symbol used when registering the value.
      * @returns The registered value.
+     * @throws {Error} When the symbol has no registration.
      * @template T - The type of the resolved value.
      */
     get<T>(registeredInterfaceSymbol: symbol): T {
-        const value = this.#registry[registeredInterfaceSymbol] as T;
-        return value;
+        if (!(registeredInterfaceSymbol in this.#registry)) {
+            throw new Error(
+                `No binding found for ${registeredInterfaceSymbol.toString()}. Did you forget to register it?`,
+            );
+        }
+        return this.#registry[registeredInterfaceSymbol] as T;
     }
 
     /**
