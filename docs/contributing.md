@@ -36,7 +36,11 @@
 7. Once approved and merged, [release-please](https://github.com/googleapis/release-please)
    will automatically create a release PR that bumps the version and updates
    the changelog based on your commit type (`fix:` = patch, `feat:` = minor,
-   `feat!:` / `BREAKING CHANGE:` = major).
+   `feat!:` / `BREAKING CHANGE:` = major). While the package is on 0.x,
+   breaking commits (`feat!:` / `BREAKING CHANGE:`) bump **minor** instead
+   (for example `0.2.1` → `0.3.0`), because `bump-minor-pre-major` is enabled.
+   After 1.0.0 that flag is a no-op for this path and breaking commits bump
+   major again; you do not need to remove the flag.
 
 ## Available tasks
 
